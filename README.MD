@@ -1,0 +1,9 @@
+# IS601 Web Systems Development
+
+## Project Description
+**Homework: Web Application Part 1**
+
+This project is a homework assignment to learn and demonstrate hot to get Pycharm setup with Docker, Flask, MySQL and GitHub.
+
+## Postman Screenshot
+![postman request output](screenshots/postman.png)
