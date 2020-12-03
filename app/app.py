@@ -12,7 +12,7 @@ def cities_import() -> List[Dict]:
         'user': 'root',
         'password': 'root',
         'host': 'db',
-        'port': '32000',
+        'port': '3306',
         'database': 'citiesData'
     }
     connection = mysql.connector.connect(**config)
