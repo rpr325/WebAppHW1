@@ -1,3 +1,4 @@
+
 from typing import List, Dict
 import mysql.connector
 import simplejson as json
@@ -29,14 +30,14 @@ def cities_import() -> List[Dict]:
 
 @app.route('/')
 def index():
-    user = {'username': 'Roberto'}
+    user = {'username': 'Miguel'}
     cities_data = cities_import()
 
-    return resp render_template('index.html', title='Home', user=user, cities=cities_data)
+    return render_template('index.html', title='Home', user=user, cities=cities_data)
 
 
 @app.route('/api/cities')
-def index() -> str:
+def cities() -> str:
     js = json.dumps(cities_import())
     resp = Response(js, status=200, mimetype='application/json')
     return resp
