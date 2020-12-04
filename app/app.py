@@ -28,10 +28,10 @@ def cities_import() -> List[Dict]:
 
 
 @app.route('/')
+@app.route('/index')
 def index():
     user = {'username': 'Miguel'}
     cities_data = cities_import()
-
     return render_template('index.html', title='Home', user=user, cities=cities_data)
 
 
